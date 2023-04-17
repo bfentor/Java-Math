@@ -3,8 +3,7 @@ import java.util.concurrent.TimeUnit;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-
-public class helloworld{
+public class Java_Math{
 
     public static void main(String args[]) {
 

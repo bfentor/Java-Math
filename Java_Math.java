@@ -63,11 +63,13 @@ public class Java_Math{
     System.out.println("Pick Tool:\n\n1. Multiplication");    
     System.out.println("2. Division\n3. Circle Circumference\n4. Circle Area");
     System.out.println("5. Exit\n");
-
     Scanner inPut = new Scanner(System.in);
+
+    int query = inPut.nextInt();
     
-   int query = inPut.nextInt();
-   
+    System.out.println("Error: Wrong input type");
+
+
    if (query == 1) {
    
        System.out.println("Format: x * y\n");
@@ -85,16 +87,7 @@ public class Java_Math{
 
         catch (Exception InputMismatchException) {
             System.out.println("Error: Overflow");
-
-            try {
-            TimeUnit.SECONDS.sleep(1);
-            }
-            catch (Exception InterruptedException) {
-                System.out.println("Caught");
-            }
-
         }
-
         PressAnyKey();
 
         execute();
